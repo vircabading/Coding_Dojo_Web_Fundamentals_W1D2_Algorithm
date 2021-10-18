@@ -43,3 +43,19 @@ while(start < end) {
 }
 print_ln();
 
+//// REVERSING AN ARRAY /////////////////////////
+print_desc("Reversing an Array");
+
+var original_array = ["a", "b", "c", "d", "e"];
+
+function reverse_array (input_array) {
+    for (var idx=0; idx < (input_array.length/2); idx++) {
+        var temp = input_array[idx];
+        input_array[idx] = input_array[input_array.length-1-idx];
+        input_array[input_array.length-1-idx] = temp;
+    }
+    return input_array;
+}
+
+console.log("Original array is:", original_array);
+console.log("Reversed array is:", reverse_array(original_array));
