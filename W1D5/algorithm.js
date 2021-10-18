@@ -28,3 +28,7 @@ fruit2 = temp;
     
 console.log(fruit2 + " and " + fruit1);
 print_ln();
+
+//// WHILE LOOPS ////////////////////////////////
+print_desc("While Loops");
+
